@@ -5,5 +5,5 @@ Java練習用に作ったGUI電卓、ライブラリでexp4jを使用してい�
 後日Youtubeにて機能紹介の動画をアップロードする予定。
 
 ide,tools
- intellij IDEA
- Scene Builder
+intellij IDEA
+Scene Builder
