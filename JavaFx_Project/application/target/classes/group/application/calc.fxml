@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group.application.Calculator_Ctrl">
+   <children>
+      <Text layoutX="21.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JavaFX_Calculator">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font></Text>
+      <Text layoutX="3.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOG" AnchorPane.leftAnchor="10.0">
+         <font>
+            <Font size="10.0" />
+         </font></Text>
+      <TextFlow fx:id="text_area" layoutX="175.0" layoutY="15.0" prefHeight="97.0" prefWidth="161.0" />
+      <FlowPane layoutX="174.0" layoutY="118.0" prefHeight="150.0" prefWidth="161.0">
+         <children>
+            <Button fx:id="delete_all" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#click_delete_all" prefHeight="0.0" prefWidth="40.0" text="全消" />
+            <Button fx:id="kakko_left" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#click_kakko_left" prefHeight="0.0" prefWidth="40.0" text="(" />
+            <Button fx:id="kakko_right" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#click_kakko_right" prefHeight="0.0" prefWidth="40.0" text=")" />
+            <Button fx:id="delete_one" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#click_delete_one" prefHeight="0.0" prefWidth="40.0" text="前消" />
+            <Button fx:id="one" layoutX="0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#click_one" prefHeight="35.0" prefWidth="40.0" text="1" />
+            <Button fx:id="two" layoutX="10.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#click_two" prefHeight="35.0" prefWidth="40.0" text="2" />
+            <Button fx:id="three" layoutX="33.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#click_three" prefHeight="35.0" prefWidth="40.0" text="3" />
+            <Button fx:id="plus" layoutX="56.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#click_plus" prefHeight="35.0" prefWidth="40.0" text="+" />
+            <Button fx:id="four" layoutX="130.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#click_four" prefHeight="35.0" prefWidth="40.0" text="4" />
+            <Button fx:id="five" layoutX="10.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#click_five" prefHeight="35.0" prefWidth="40.0" text="5" />
+            <Button fx:id="six" layoutX="50.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#click_six" prefHeight="35.0" prefWidth="40.0" text="6" />
+            <Button fx:id="minus" layoutX="90.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#click_minus" prefHeight="35.0" prefWidth="40.0" text="-" />
+            <Button fx:id="seven" layoutX="130.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#click_seven" prefHeight="35.0" prefWidth="40.0" text="7" />
+            <Button fx:id="eight" layoutX="10.0" layoutY="106.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#click_eight" prefHeight="35.0" prefWidth="40.0" text="8" />
+            <Button fx:id="nine" layoutX="50.0" layoutY="106.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#click_nine" prefHeight="35.0" prefWidth="40.0" text="9" />
+            <Button fx:id="kakezan" layoutX="90.0" layoutY="106.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#click_kakezan" prefHeight="35.0" prefWidth="40.0" text="×" />
+            <Button fx:id="equal" layoutX="130.0" layoutY="106.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#click_equal" prefHeight="35.0" prefWidth="40.0" text="=" />
+            <Button fx:id="dot" layoutX="10.0" layoutY="141.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#click_dot" prefHeight="35.0" prefWidth="40.0" text="." />
+            <Button fx:id="zero" layoutX="50.0" layoutY="141.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#click_zero" prefHeight="35.0" prefWidth="40.0" text="0" />
+            <Button fx:id="division" layoutX="90.0" layoutY="141.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#click_division" prefHeight="35.0" prefWidth="40.0" text="÷" />
+         </children>
+      </FlowPane>
+      <TilePane layoutX="5.0" layoutY="71.0" prefHeight="216.0" prefWidth="164.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <Text fx:id="log_text" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="153.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+         </children>
+      </TilePane>
+   </children>
+</AnchorPane>
